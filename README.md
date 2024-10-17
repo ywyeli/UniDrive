@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="assets/figs/unidrive-logo.png" align="center" width="26%">
+  <img src="assets/figs/unidrive-logo.png" align="center" width="20%">
   
   <h3 align="center"><strong>UniDrive: Towards Universal Driving Perception Across Camera Configurations</strong></h3>
 
