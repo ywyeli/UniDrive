@@ -52,7 +52,7 @@
 Visit our [project page]() to explore more examples. :blue_car:
 
 
-## :ferris_wheel: UniDrive Pipeline
+## :hammer_and_wrench: UniDrive Pipeline
 | <img src="assets/figs/pipeline.png" align="center" width="98%"> |
 | :-: | 
 | We transform the input images into a unified virtual camera space to achieve universal driving perception. To estimate the depth of pixels in the virtual view for projection, we propose a ground-aware depth assumption strategy. To obtain the most effective virtual camera space for multiple real camera configurations, we propose a data-driven optimization strategy to minimize projection error. |
@@ -70,7 +70,6 @@ Visit our [project page]() to explore more examples. :blue_car:
 - [Installation](#gear-installation)
 - [Data Preparation](#hotsprings-data-preparation)
 - [Camera Configuration](#blue_car-camera-configuration)
-- [UniDrive Pipeline](#ferris_wheel-UniDrive-pipeline)
 - [Getting Started](#rocket-getting-started)
 - [UniDrive Benchmark](#bar_chart-UniDrive-benchmark)
 - [TODO List](#memo-todo-list)
@@ -88,7 +87,7 @@ For details related to installation and environment setups, kindly refer to [INS
 
 ## :hotsprings: Data Preparation
 
-The `UniDrive` dataset consists of a total of eleven Camera Configurations, in which seven baselines are inspired by existing self-driving configurations from autonomous vehicle companies and four Camera Configurations are obtained by sensor optimization.
+The `UniDrive` dataset consists of a total of eight Camera Configurations which are inspired by existing self-driving configurations from autonomous vehicle companies.
 
 Each Camera Configuration contains 4 to 8 sensors. For each Camera Configuration, the sub-dataset consists of 20,000 frames of samples, comprising 10,000 samples for training and 10,000 samples for validation.
 
@@ -108,11 +107,11 @@ Kindly refer to [DATA_PREPARE.md](assets/document/DATA_PREPARE.md) for the detai
 
 ## :blue_car: Camera Configuration
 
-| <img src="assets/figs/1_center.png" align="center" width="210"> | <img src="assets/figs/2_line.png" align="center" width="210"> | <img src="assets/figs/3_pyramid.png" align="center" width="210"> | <img src="assets/figs/4_square.png" align="center" width="210"> |
+| <img src="assets/figs/4x.png" align="center" width="210"> | <img src="assets/figs/5x.png" align="center" width="210"> | <img src="assets/figs/6x60.png" align="center" width="210"> | <img src="assets/figs/6x70.png" align="center" width="210"> |
 | :-: | :-: | :-: | :-: |
-| A | B | C | D |
-| <img src="assets/figs/5_trapezoid.png" align="center" width="210"> | <img src="assets/figs/6_line_roll.png" align="center" width="210"> | <img src="assets/figs/8_ours_det.png" align="center" width="210"> | <img src="assets/figs/7_ours_seg.png" align="center" width="210">
-| E | F | G | H | 
+| 4x95 | 5x75 | 6x60 | 6x70 |
+| <img src="assets/figs/6x80a.png" align="center" width="210"> | <img src="assets/figs/6x80b.png" align="center" width="210"> | <img src="assets/figs/nuScenes.jpg" align="center" width="210"> | <img src="assets/figs/8x.png" align="center" width="210">
+| 6x80a | 6x80b | 5x70+110 | 8x50 | 
 
 
 
