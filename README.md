@@ -8,7 +8,7 @@
 
   <p align="center">
       <a href="https://ywyeli.github.io/" target='_blank'>Ye Li</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
-      <a href=https://wzzheng.net/" target='_blank'>Wenzhao Zheng</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
+      <a href="https://wzzheng.net/" target='_blank'>Wenzhao Zheng</a><sup>2</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://robotics.umich.edu/profile/xiaonan-sean-huang/" target='_blank'>Xiaonan Huang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;
       <a href="https://people.eecs.berkeley.edu/~keutzer/" target='_blank'>Kurt Keutzer</a><sup>2</sup>
   <br />
