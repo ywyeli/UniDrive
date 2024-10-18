@@ -19,11 +19,11 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/" target='_blank'>
+  <a href="https://arxiv.org/abs/2410.13864" target='_blank'>
     <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-slategray">
   </a>
   
-  <a href="" target='_blank'>
+  <a href="https://wzzheng.net/UniDrive" target='_blank'>
     <img src="https://img.shields.io/badge/Project-%F0%9F%94%97-lightblue">
   </a>
   
@@ -44,12 +44,12 @@
 ## About
 
 `UniDrive` is a novel framework designed to address the challenge of generalizing perception models across multi-camera configurations.
-- To the best of our knowledge, \textbf{UniDrive} presents the first comprehensive framework designed to generalize vision-centric 3D perception models across diverse camera configurations.
-- We introduce a novel strategy that transforms images into a unified virtual camera space, enhancing robustness to camera parameter variations.
+- To the best of our knowledge, UniDrive presents the first comprehensive framework designed to generalize vision-centric 3D perception models across diverse camera configurations.
+- We introduce a novel strategy that transforms images into a unified virtual camera space, enhancing the robustness for camera parameter variations.
 - We propose a virtual configuration optimization strategy that minimizes projection error, improving model generalization with minimal performance degradation.
 - We contribute a systematic data generation platform along with a 160,000 frames multi-camera dataset, and benchmark evaluating perception models across varying camera configurations.
 
-Visit our [project page]() to explore more examples. :blue_car:
+Visit our [project page](https://wzzheng.net/UniDrive) to explore more examples. :blue_car:
 
 
 ## :hammer_and_wrench: UniDrive Pipeline
@@ -60,8 +60,7 @@ Visit our [project page]() to explore more examples. :blue_car:
 
 ## Updates
 
-- \[2024.10\] - The code has been made publicly accessible. :rocket:
-- \[2024.10\] - Our [paper](https://arxiv.org/) is available on arXiv.
+- \[2024.10\] - Our [paper](https://arxiv.org/abs/2410.13864) is available on arXiv.
 
 
 
@@ -126,11 +125,8 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](assets
 
 
 ## :memo: TODO List
-- [x] Initial release. 🚀
-- [x] Add Camera Configuration benchmarks.
-- [x] Add Camera Configuration datasets.
-- [x] Add acknowledgments.
-- [x] Add citations.
+- [ ] Initial release. 🚀
+- [ ] Add Camera Configuration benchmarks.
 - [ ] Add more 3D perception models.
 
 
@@ -139,12 +135,12 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](assets
 If you find this work helpful for your research, please kindly consider citing our papers:
 
 ```bibtex
-@misc{mmdet3d,
-    title = {MMDetection3D: OpenMMLab Next-Generation Platform for General 3D Object Detection},
-    author = {MMDetection3D Contributors},
-    howpublished = {\url{https://github.com/open-mmlab/mmdetection3d}},
-    year = {2020}
-}
+ @article{li2024unidrive,
+            title={UniDrive: Towards Universal Driving Perception Across Camera Configurations},
+            author={Li, Ye and Zheng, Wenzhao and Huang, Xiaonan and Keutzer, Kurt},
+            journal={arXiv preprint arXiv:2410.13864},
+            year={2024}
+          }
 ```
 
 
