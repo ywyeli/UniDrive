@@ -61,6 +61,7 @@ Visit our [project page](https://wzzheng.net/UniDrive) to explore more examples.
 ## Updates
 
 - \[2024.10\] - Our [paper](https://arxiv.org/abs/2410.13864) is available on arXiv.
+- - \[2024.10\] - UniDrive is accepted at ICLR 2025.
 
 
 
