@@ -8,7 +8,7 @@ sys.path.append(
 import toml
 import carla
 
-from constants import CAMERA_IMAGE_X, CAMERA_IMAGE_Y, MAX_RENDER_DEPTH_IN_METERS
+from constants import CAMERA_IMAGE_X, CAMERA_IMAGE_Y, LIDAR_DEPTH_IN_METERS
 # from constants import *
 
 
@@ -82,7 +82,7 @@ class LiDARSetup(object):
                 spec["lower_fov"] = str(self.lower_fov)
                 spec["channels"] = str(self.channels[i])
 
-                spec["range"] = str(MAX_RENDER_DEPTH_IN_METERS)
+                spec["range"] = str(LIDAR_DEPTH_IN_METERS)
 
                 spec["rotation_frequency"] = str(20.0)
 
