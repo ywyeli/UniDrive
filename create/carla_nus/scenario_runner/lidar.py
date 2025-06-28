@@ -8,7 +8,7 @@ sys.path.append(
 import toml
 import carla
 
-from constants import CAMERA_IMAGE_X, CAMERA_IMAGE_Y, LIDAR_DEPTH_IN_METERS
+from constants import CAMERA_IMAGE_X, CAMERA_IMAGE_Y
 # from constants import *
 
 
@@ -28,6 +28,9 @@ class LiDARSetup(object):
         self.z = params["z"]
         self.roll = params["roll"]
         self.pitch = params["pitch"]
+        self.lidar_range_in_meters = params["lidar_range_in_meters"]
+        self.rotation_frequency = params["rotation_frequency"]
+        self.points_per_channel = params["points_per_channel"]
         self.stats = {}
         if setup:
             # self._check_for_errors()
@@ -78,17 +81,14 @@ class LiDARSetup(object):
                 spec['roll'], spec['pitch'], spec['yaw'] = self.roll[i][j], self.pitch[i][j], 0
                 spec["noise_stddev"] = "0.2"
 
-                spec["upper_fov"] = str(self.upper_fov)
-                spec["lower_fov"] = str(self.lower_fov)
-                spec["channels"] = str(self.channels[i])
+                spec["upper_fov"] = str(self.upper_fov[i][j])
+                spec["lower_fov"] = str(self.lower_fov[i][j])
+                spec["channels"] = str(self.channels[i][j])
 
-                spec["range"] = str(LIDAR_DEPTH_IN_METERS)
-
-                spec["rotation_frequency"] = str(20.0)
-
-                points = 20_000 * self.channels[i]  # default 5000
-
-                spec["points_per_second"] = str(points)
+                spec["range"] = str(self.lidar_range_in_meters[i][j])
+                spec["rotation_frequency"] = str(self.rotation_frequency[i][j])
+                spec["points_per_second"] = str(self.points_per_channel[i][j] * self.channels[i][j]) 
+                
                 spec["id"] = f"l_{i}{j}"
                 spec["type"] = "sensor.lidar.ray_cast_semantic"
 
