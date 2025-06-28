@@ -54,20 +54,21 @@ Visit our [project page](https://wzzheng.net/UniDrive) to explore more examples.
 
 ## :hammer_and_wrench: UniDrive Pipeline
 | <img src="assets/figs/pipeline.png" align="center" width="98%"> |
-| :-: | 
+| :-- | 
 | We transform the input images into a unified virtual camera space to achieve universal driving perception. To estimate the depth of pixels in the virtual view for projection, we propose a ground-aware depth assumption strategy. To obtain the most effective virtual camera space for multiple real camera configurations, we propose a data-driven optimization strategy to minimize projection error. |
 
 
 ## Updates
 
-- \[2024.10\] - Our [paper](https://arxiv.org/abs/2410.13864) is available on arXiv.
 - \[2025.01\] - UniDrive is accepted at ICLR 2025.
+- \[2024.10\] - Our [paper](https://arxiv.org/abs/2410.13864) is available on arXiv.
+
 
 
 
 ## Outline
 
-- [Installation](#gear-installation)
+
 - [Data Preparation](#hotsprings-data-preparation)
 - [Camera Configuration](#blue_car-camera-configuration)
 - [Getting Started](#rocket-getting-started)
@@ -79,9 +80,7 @@ Visit our [project page](https://wzzheng.net/UniDrive) to explore more examples.
 
 
 
-## :gear: Installation
 
-For details related to installation and environment setups, kindly refer to [INSTALL.md](assets/INSTALL.md).
 
 
 
@@ -110,7 +109,7 @@ Kindly refer to [DATA_PREPARE.md](assets/document/DATA_PREPARE.md) for the detai
 | <img src="assets/figs/4x.png" align="center" width="210"> | <img src="assets/figs/5x.png" align="center" width="210"> | <img src="assets/figs/6x60.png" align="center" width="210"> | <img src="assets/figs/6x70.png" align="center" width="210"> |
 | :-: | :-: | :-: | :-: |
 | 4x95 | 5x75 | 6x60 | 6x70 |
-| <img src="assets/figs/6x80a.png" align="center" width="210"> | <img src="assets/figs/6x80b.png" align="center" width="210"> | <img src="assets/figs/nuScenes.jpg" align="center" width="210"> | <img src="assets/figs/8x.png" align="center" width="210">
+| <img src="assets/figs/6x80a.png" align="center" width="210"> | <img src="assets/figs/6x80b.png" align="center" width="210"> | <img src="assets/figs/nuScenes.png" align="center" width="210"> | <img src="assets/figs/8x.png" align="center" width="210">
 | 6x80a | 6x80b | 5x70+110 | 8x50 | 
 
 
@@ -136,18 +135,18 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](assets
 If you find this work helpful for your research, please kindly consider citing our papers:
 
 ```bibtex
- @article{li2024unidrive,
+ @inproceedings{li2024unidrive,
             title={UniDrive: Towards Universal Driving Perception Across Camera Configurations},
             author={Li, Ye and Zheng, Wenzhao and Huang, Xiaonan and Keutzer, Kurt},
-            journal={arXiv preprint arXiv:2410.13864},
-            year={2024}
+            booktitle={International Conference on Learning Representations (ICLR)},
+            year={2025}
           }
 ```
 
 
 ## License
 
-This work is under the <a rel="license" href="">MIT License</a>, while some specific implementations in this codebase might be with other licenses. Kindly refer to [LICENSE.md](assets/LICENSE.md) for a more careful check, if you are using our code for commercial matters.
+This work is under the <a rel="license" href="">MIT License</a>, while some specific implementations in this codebase might be with other licenses.
 
 
 
