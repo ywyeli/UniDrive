@@ -71,7 +71,6 @@ Visit our [project page](https://wzzheng.net/UniDrive) to explore more examples.
 
 - [Data Preparation](#hotsprings-data-preparation)
 - [Camera Configuration](#blue_car-camera-configuration)
-- [Getting Started](#rocket-getting-started)
 - [UniDrive Benchmark](#bar_chart-UniDrive-benchmark)
 - [TODO List](#memo-todo-list)
 - [Citation](#citation)
@@ -100,7 +99,7 @@ Our datasets are hosted by [OpenDataLab](https://opendatalab.com/).
 ><img src="https://raw.githubusercontent.com/opendatalab/dsdl-sdk/2ae5264a7ce1ae6116720478f8fa9e59556bed41/resources/opendatalab.svg" width="32%"/><br>
 > OpenDataLab is a pioneering open data platform for the large AI model era, making datasets accessible. By using OpenDataLab, researchers can obtain free formatted datasets in various fields.
 
-Kindly refer to [DATA_PREPARE.md](assets/document/DATA_PREPARE.md) for the details to prepare the `UniDrive` dataset.
+Kindly refer to [DATA_PREPARE.md](assets/DATA_PREPARE.md) for the details to prepare the `UniDrive` dataset.
 
 
 
@@ -114,9 +113,7 @@ Kindly refer to [DATA_PREPARE.md](assets/document/DATA_PREPARE.md) for the detai
 
 
 
-## :rocket: Getting Started
 
-To learn more usage about this codebase, kindly refer to [GET_STARTED.md](assets/GET_STARTED.md).
 
 
 
@@ -125,7 +122,7 @@ To learn more usage about this codebase, kindly refer to [GET_STARTED.md](assets
 
 
 ## :memo: TODO List
-- [ ] Initial release. 🚀
+- [x] Initial release. 🚀
 - [ ] Add Camera Configuration benchmarks.
 - [ ] Add more 3D perception models.
 
