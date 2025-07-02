@@ -204,7 +204,9 @@ def pre_render(txt_file_path, bin_file_path, output_file_path):
         cropped_pcd = pcd.crop(bbox)
         point_count = len(cropped_pcd.points)
         point_counts.append(point_count)
-        if point_count > 1:
+        if point_count > 5:
+            valid_objects.append(obj)
+        elif point_count > 3 and obj['type'] in ['pedestrian', 'bicycle', 'motorcycle']:
             valid_objects.append(obj)
     # for i, count in enumerate(point_counts):
     #     print(f"Bounding Box {i + 1} contains {count} points")

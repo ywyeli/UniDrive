@@ -25,10 +25,12 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
+
 def points_to_convex_polygon(points):
     hull = ConvexHull(points)
     hull_points = points[hull.vertices]
     return Polygon(hull_points)
+
 
 # open label folder
 def openreadtxt(file_name):
@@ -500,6 +502,7 @@ def nuread(pathh, path_position, path_timestamp, root_path, scene_numbers, args)
 
     n = 0
     it = 0
+    start_index_num = 1500_0000_0000_0000
 
     for sum_no in trange(scene_numbers):
         # print(sum_no)
@@ -584,10 +587,11 @@ def nuread(pathh, path_position, path_timestamp, root_path, scene_numbers, args)
                     calibrated_sensor_token = '90000000000000000000000000000000'
                     ego_pose_token = sample_data_token_lidar_top
 
+                    lidarseg_index_num = 3000_0000_0000_0000_0000_0000_0000_0000 + int(label_index) - start_index_num
                     lidarseg_json.append(
                         {'token': str(sample_data_token_lidar_top),
                          'sample_data_token': str(sample_data_token_lidar_top),
-                         'filename': "lidarseg/v1.0-trainval/" + str(sample_data_token_lidar_top) + "_lidarseg.bin"}
+                         'filename': "lidarseg/v1.0-trainval/" + str(lidarseg_index_num) + "_lidarseg.bin"}
                     )
 
                 else:
